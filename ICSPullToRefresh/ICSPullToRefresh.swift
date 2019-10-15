@@ -271,7 +271,7 @@ open class PullToRefreshView: UIView {
     }()
     
     lazy var activityIndicator: UIActivityIndicatorView = {
-        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorView.Style.gray)
         activityIndicator.hidesWhenStopped = false
         return activityIndicator
     }()
@@ -280,7 +280,7 @@ open class PullToRefreshView: UIView {
         activityIndicator.color = color
     }
 
-    open func setActivityIndicatorStyle(_ style: UIActivityIndicatorViewStyle) {
+    open func setActivityIndicatorStyle(_ style: UIActivityIndicatorView.Style) {
         activityIndicator.activityIndicatorViewStyle = style
     }
     
